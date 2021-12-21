@@ -43,6 +43,10 @@ const material = new THREE.RawShaderMaterial({
     vertexShader: testVertexShader ,
     fragmentShader: testFragmentShader,
     // transparent:true
+    uniforms:
+    {
+        uFrequency: { value: new THREE.Vector2(10, 5) }
+    }
 
     
 })
