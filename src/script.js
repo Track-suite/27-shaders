@@ -114,8 +114,14 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
+    // Update material
+    material.uniforms.uTime.value = elapsedTime
+
+
     // Update controls
     controls.update()
+
+    
 
     // Render
     renderer.render(scene, camera)
