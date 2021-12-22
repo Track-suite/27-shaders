@@ -14,4 +14,6 @@ varying float vElevation;
         textureColor.rgb += vElevation * 1.5 + 0.02;
         // vec4(r,g,b and a)
         gl_FragColor = textureColor;
+
+        gl_FragColor = vec4(vUv, 1.0, 1.0);
     }
